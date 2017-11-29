@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mParentLayout"
+    tools:context="live.test.com.inputstreamdemo.MainActivity">
+
+  <!--<TextureView-->
+      <!--android:layout_width="160dp"-->
+      <!--android:layout_height="120dp"-->
+      <!--android:id="@+id/camerapreview_textureview"-->
+
+      <!--android:layout_gravity="bottom|left" />-->
+
+  <TextureView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/camerapreview_textureview"
+
+      android:layout_gravity="bottom|left" />
+
+
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="开始"
+      android:onClick="startStreaming" />
+
+  <Button
+      android:id="@+id/button3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="80dp"
+      android:text="放大"
+      android:onClick="enLarge" />
+
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="160dp"
+      android:onClick="switchCamera"
+      android:text="切换" />
+</FrameLayout>
